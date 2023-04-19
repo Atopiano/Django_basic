@@ -11,5 +11,8 @@ urlpatterns = [
     path("<int:question_id>", views.detail, name="detail"),
 
     # 답변 등록에 대한 URL 매핑
-    path("answer/create/<int:question_id>/", views.answer_create, name="answer_create")
+    path("answer/create/<int:question_id>/", views.answer_create, name="answer_create"),
+
+    # 질문 등록에 대한 URL 매핑
+    path("question/create/", views.question_create, name="question_create")
 ]
